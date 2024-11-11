@@ -9,6 +9,8 @@ namespace InsuranceAgencyApp
             Console.WriteLine("Добро пожаловать в страховое агентство!");
 
             RegisterClient();
+            var value = CalculatePremium();
+            CreatePolicy(value);
         }
 
         static void RegisterClient()
