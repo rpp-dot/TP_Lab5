@@ -17,13 +17,14 @@ namespace InsuranceAgencyApp
             string clientName = Console.ReadLine();
             Console.WriteLine($"Клиент {clientName} зарегистрирован!");
         }
-        static void CalculatePremium()
+        static decimal CalculatePremium()
         {
             Console.WriteLine("Введите стоимоть имущества:");
             decimal value = decimal.Parse(Console.ReadLine());
 
             decimal premium = value*0.1;
             Console.WriteLine($"Стоимость премии: ${premium}");
+            return value;
         }
     }
 }
