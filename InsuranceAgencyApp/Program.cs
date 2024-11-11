@@ -25,5 +25,9 @@ namespace InsuranceAgencyApp
             decimal premium = value*0.1;
             Console.WriteLine($"Стоимость премии: ${premium}");
         }
+        static void CreatePolicy()
+        {
+            Console.WriteLine("Полис создан.");
+        }
     }
 }
